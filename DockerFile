@@ -16,9 +16,9 @@ FROM openjdk:21-jdk-slim
 
 WORKDIR /app
 
-COPY --from=builder /app/build/libs/*.jar app.jar
+COPY --from=builder /app/build/libs/*.jar discografica-db.jar
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "discografica-db.jar"]
 
