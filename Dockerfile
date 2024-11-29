@@ -18,7 +18,7 @@ WORKDIR /app
 
 COPY --from=builder /app/build/libs/*.jar discografica-db.jar
 
-EXPOSE 8080
+#EXPOSE 8080
 
 CMD ["java", "-jar", "discografica-db.jar"]
 
